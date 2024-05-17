@@ -30,7 +30,9 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        Noel Luna <i className='fab fa-typo3' />
+                        
+                        Noel Luna
+                        {/* Noel Luna <i className='fab fa-typo3' /> */}
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -38,26 +40,28 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                                Resume
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                Services
-                            </Link>
+                            <a href="https://www.linkedin.com/in/noelamadorluna/" className='nav-links' onClick={closeMobileMenu}>LinkedIn</a>
+                            {/* <Link to={pathname : "https://www.linkedin.com/in/noelamadorluna/"} className='nav-links' onClick={closeMobileMenu}>
+                                LinkedIn
+                            </Link> */}
                         </li>
                         <li className='nav-item'>
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                Products
-                            </Link>
+                            <a href="https://github.com/nluna96" className='nav-links' onClick={closeMobileMenu}>GitHub</a>
+                            {/* <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                GitHub
+                            </Link> */}
                         </li>
                         <li className='nav-item'>
                             <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Sign Up
+                                Contact
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button buttonStyle='btn--outline'>Contact</Button>}
                 </div>
             </nav>
         </>
@@ -65,3 +69,12 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+            // <Section image={image}>
+            //     <FooterBottom>
+            //         <a href="https://www.linkedin.com/in/noelamadorluna/"><img src={require("../logos/linkedin.png")} alt="linked in logo"/></a>
+            //         <a href="https://github.com/nluna96"><img src={require("../logos/github.png")} alt="github in logo"/></a>
+            //     </FooterBottom>
+            // </Section>

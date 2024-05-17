@@ -65,7 +65,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               Noel Luna
-              <i class='fab fa-typo3' />
+              {/* <i class='fab fa-typo3' /> */}
             </Link>
           </div>
           <small class='website-rights'>Noel Luna © 2020</small>
