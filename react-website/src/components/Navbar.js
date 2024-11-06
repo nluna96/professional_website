@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import Resume from '../download/Luna_Noel.pdf';
 import './Navbar.css';
 
 function Navbar() {
@@ -30,8 +31,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        
-                        Noel Luna
+                        NL
                         {/* Noel Luna <i className='fab fa-typo3' /> */}
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
@@ -39,9 +39,10 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <a href={Resume} download="Luna_Noel" className='nav-links'>Resume</a>
+                            {/* <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Resume
-                            </Link>
+                            </Link> */}
                         </li>
                         <li className='nav-item'>
                             <a href="https://www.linkedin.com/in/noelamadorluna/" className='nav-links' onClick={closeMobileMenu}>LinkedIn</a>
