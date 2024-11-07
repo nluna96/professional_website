@@ -1,6 +1,6 @@
 import React from 'react';
 import './Button.css';
-import {Link} from 'react-router-dom';
+import Resume from '../download/Luna_Noel.pdf';
 
 const STYLES = ['btn--primary', 'btn--outline'];
 
@@ -22,11 +22,11 @@ export const Button = ({
         : SIZES[0];
 
         return (
-            <Link to='/sign-up' className='btn-mobile'>
+            <a href={Resume} download="Luna_Noel" className='btn-mobile'>
                 <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
                     {children}
                 </button>
-            </Link>
+            </a>
 
 
         )

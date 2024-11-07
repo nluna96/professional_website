@@ -1,0 +1,21 @@
+.gallery {
+  padding: 4rem;
+  background: #eeeeee;
+}
+
+.gallery h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+  font-family: "Koh Santepheap", serif;
+  font-style: normal;
+}
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    padding: 2rem;
+  }
+  .gallery h1 {
+    font-size: 30px;
+  }
+}
