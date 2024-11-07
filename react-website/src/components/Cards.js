@@ -11,7 +11,6 @@ function Cards () {
                     <ul className='cards__items'>
                         <CardItem src='images/img-11.jpg' text='Explore the waterfall' label='Adventure' path='/services' />
                         <CardItem src='images/img-13.jpg' text='Visit Aztec Pyramid' label='Luxury' path='/services' />
-
                     </ul>
                     <ul className='cards__items'>
                         <CardItem src='images/img-10.jpg' text='Explore the Cenotes' label='Adventure' path='/services' />

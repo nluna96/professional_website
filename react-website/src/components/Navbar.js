@@ -32,7 +32,6 @@ function Navbar() {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         NL
-                        {/* Noel Luna <i className='fab fa-typo3' /> */}
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -40,21 +39,12 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <a href={Resume} download="Luna_Noel" className='nav-links'>Resume</a>
-                            {/* <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Resume
-                            </Link> */}
                         </li>
                         <li className='nav-item'>
                             <a href="https://www.linkedin.com/in/noelamadorluna/" className='nav-links' onClick={closeMobileMenu}>LinkedIn</a>
-                            {/* <Link to={pathname : "https://www.linkedin.com/in/noelamadorluna/"} className='nav-links' onClick={closeMobileMenu}>
-                                LinkedIn
-                            </Link> */}
                         </li>
                         <li className='nav-item'>
                             <a href="https://github.com/nluna96" className='nav-links' onClick={closeMobileMenu}>GitHub</a>
-                            {/* <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                GitHub
-                            </Link> */}
                         </li>
                         <li className='nav-item'>
                             <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
@@ -70,12 +60,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-            // <Section image={image}>
-            //     <FooterBottom>
-            //         <a href="https://www.linkedin.com/in/noelamadorluna/"><img src={require("../logos/linkedin.png")} alt="linked in logo"/></a>
-            //         <a href="https://github.com/nluna96"><img src={require("../logos/github.png")} alt="github in logo"/></a>
-            //     </FooterBottom>
-            // </Section>
