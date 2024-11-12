@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.88c90349.css",
+    "main.js": "/static/js/main.6d21683e.js",
+    "static/media/Luna_Noel.pdf": "/static/media/Luna_Noel.4bfa3917b2a03ca5ab10.pdf",
+    "index.html": "/index.html",
+    "main.88c90349.css.map": "/static/css/main.88c90349.css.map",
+    "main.6d21683e.js.map": "/static/js/main.6d21683e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88c90349.css",
+    "static/js/main.6d21683e.js"
+  ]
+}
